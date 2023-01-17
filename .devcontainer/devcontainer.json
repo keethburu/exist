@@ -1,5 +1,10 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/java-8",
-  "features": {
-  }
+    "name": "my-project-devcontainer",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",  // Any generic, debian-based image.
+    "features": {
+       "ghcr.io/devcontainers/features/java:1": {
+          "version": "8",
+           "jdkDistro": "open"
+       }
+    }
 }
